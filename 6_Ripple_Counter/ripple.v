@@ -34,5 +34,6 @@ module ripple ( input clk,
  .rstn (rstn),
  .q (q3),
  .qn (qn3));
+ 
  assign out = {qn3, qn2, qn1, qn0};
 endmodule
