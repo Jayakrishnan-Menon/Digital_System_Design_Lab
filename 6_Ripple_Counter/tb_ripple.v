@@ -11,13 +11,13 @@ module tb_ripple;
  always #5 clk = ~clk;
 
  initial begin
- rstn <= 0;
- clk <= 0;
-
- repeat (4) @ (posedge clk);
- rstn <= 1;
-
- repeat (25) @ (posedge clk);
- $finish;
+  rstn <= 0;
+  clk <= 0;
+ 
+  repeat (4) @ (posedge clk);
+  rstn <= 1;
+  
+  repeat (25) @ (posedge clk);
+  $finish;
  end
 endmodule
