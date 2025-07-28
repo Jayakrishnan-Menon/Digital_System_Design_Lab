@@ -9,7 +9,7 @@ module PA_tb;
   PA dut(.a(a), .b(b), .cin(cin), .sum(sum), .cout(cout));
   initial begin
     // Initialize Inputs 
-    assign cin = 1'b0;
+    cin = 1'b0;
     a = 5; b = 5; #100; 
     a = 15; b = 12; #100; 
   end 
